@@ -12,7 +12,6 @@ Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
 # Source0-md5:	440ef155d58821df44c643a44d21e312
 URL:		http://pecl.php.net/package/ssh2/
 BuildRequires:	libssh2-devel >= 0.5
-BuildRequires:	libtool
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	php-devel >= 3:5.0.0
 Requires:	php-common >= 3:5.0.0
