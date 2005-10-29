@@ -2,12 +2,11 @@
 %define		_status		beta
 %define		_sysconfdir	/etc/php
 %define		extensionsdir	%(php-config --extension-dir 2>/dev/null)
-
 Summary:	%{_modname} - bindings for the libssh2 library
 Summary(pl):	%{_modname} - dowi±zania do biblioteki libssh2
 Name:		php-pecl-%{_modname}
 Version:	0.9
-Release:	2
+Release:	3
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
@@ -16,7 +15,7 @@ URL:		http://pecl.php.net/package/ssh2/
 BuildRequires:	libssh2-devel >= 0.5
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	php-devel >= 3:5.0.0
-BuildRequires:	rpmbuild(macros) >= 1.238
+BuildRequires:	rpmbuild(macros) >= 1.254
 %{?requires_php_extension}
 Requires:	%{_sysconfdir}/conf.d
 Obsoletes:	php-pear-%{_modname}
