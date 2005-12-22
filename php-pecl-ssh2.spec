@@ -6,7 +6,7 @@ Summary:	%{_modname} - bindings for the libssh2 library
 Summary(pl):	%{_modname} - dowi±zania do biblioteki libssh2
 Name:		php-pecl-%{_modname}
 Version:	0.9
-Release:	4
+Release:	5
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
