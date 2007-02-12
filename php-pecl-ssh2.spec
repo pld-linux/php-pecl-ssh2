@@ -1,7 +1,7 @@
 %define		_modname	ssh2
 %define		_status		beta
 Summary:	%{_modname} - bindings for the libssh2 library
-Summary(pl):	%{_modname} - dowi±zania do biblioteki libssh2
+Summary(pl.UTF-8):   %{_modname} - dowiÄ…zania do biblioteki libssh2
 Name:		php-pecl-%{_modname}
 Version:	0.10
 Release:	1
@@ -25,9 +25,9 @@ SSH2 protocol.
 
 In PECL status of this extension is: %{_status}.
 
-%description -l pl
-Dostarcza dowi±zañ do ró¿nych funkcji biblioteki libssh2
-implementuj±cej protokó³ SSH2.
+%description -l pl.UTF-8
+Dostarcza dowiÄ…zaÅ„ do rÃ³Å¼nych funkcji biblioteki libssh2
+implementujÄ…cej protokÃ³Å‚ SSH2.
 
 To rozszerzenie ma w PECL status: %{_status}.
 
