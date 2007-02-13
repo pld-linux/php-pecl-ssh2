@@ -1,7 +1,7 @@
 %define		_modname	ssh2
 %define		_status		beta
 Summary:	%{_modname} - bindings for the libssh2 library
-Summary(pl.UTF-8):   %{_modname} - dowiązania do biblioteki libssh2
+Summary(pl.UTF-8):	%{_modname} - dowiązania do biblioteki libssh2
 Name:		php-pecl-%{_modname}
 Version:	0.10
 Release:	1
