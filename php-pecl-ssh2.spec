@@ -3,16 +3,15 @@
 Summary:	%{modname} - bindings for the libssh2 library
 Summary(pl.UTF-8):	%{modname} - dowiązania do biblioteki libssh2
 Name:		php-pecl-%{modname}
-Version:	0.11.0
-Release:	5
+Version:	0.12
+Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
-# Source0-md5:	9f5dcd5b92299458389038f7318cbc46
-Patch0:		php-pecl-ssh2-libssh2.patch
-Patch1:		branch.diff
+# Source0-md5:	409b91678a842bb0ff56f2cf018b9160
+Patch0:		branch.diff
 URL:		http://pecl.php.net/package/ssh2/
-BuildRequires:	libssh2-devel >= 0.16
+BuildRequires:	libssh2-devel >= 1.2.9
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	php-devel >= 4:5.0.4
 BuildRequires:	rpmbuild(macros) >= 1.344
@@ -34,8 +33,7 @@ To rozszerzenie ma w PECL status: %{status}.
 %prep
 %setup -qc
 mv %{modname}-%{version}/* .
-%patch0 -p0
-%patch1 -p0
+#%patch0 -p0
 
 %build
 phpize
