@@ -13,11 +13,12 @@ Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 Patch0:		php-pecl-ssh2-libssh2.patch
 Patch1:		branch.diff
 URL:		http://pecl.php.net/package/ssh2/
+BuildRequires:	%{php_name}-devel >= 4:5.0.4
 BuildRequires:	libssh2-devel >= 0.16
 BuildRequires:	openssl-devel >= 0.9.7d
-BuildRequires:	%{php_name}-devel >= 4:5.0.4
 BuildRequires:	rpmbuild(macros) >= 1.650
 %{?requires_php_extension}
+Provides:	php(%{modname}) = %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
