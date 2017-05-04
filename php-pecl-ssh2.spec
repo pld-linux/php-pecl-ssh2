@@ -9,6 +9,7 @@ License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 # Source0-md5:	e35f8438b3f6177066166c8c1916f44e
+Patch0:		bug-73524.patch
 URL:		https://pecl.php.net/package/ssh2
 BuildRequires:	%{php_name}-devel >= 4:5.0.4
 BuildRequires:	libssh2-devel >= 1.2.9
@@ -30,6 +31,7 @@ implementującej protokół SSH2.
 %prep
 %setup -qc
 mv %{modname}-%{version}/* .
+%patch0 -p1
 
 %build
 phpize
