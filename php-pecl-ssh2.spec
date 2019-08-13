@@ -10,7 +10,7 @@ Group:		Development/Languages/PHP
 Source0:	https://pecl.php.net/get/%{modname}-%{version}.tgz
 # Source0-md5:	0bb1b02ae6d1d1a86134959e9b45ae69
 URL:		https://pecl.php.net/package/ssh2
-BuildRequires:	%{php_name}-devel >= 4:5.0.4
+BuildRequires:	%{php_name}-devel >= 4:7.0.0
 BuildRequires:	libssh2-devel >= 1.2.9
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	rpmbuild(macros) >= 1.650
